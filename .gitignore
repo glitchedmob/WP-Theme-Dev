@@ -16,3 +16,4 @@ wp-content/plugins/hello.php
 /sitemap.xml.gz
 /wp-content/themes/gulp-dev/node_modules
 
+.vs/
