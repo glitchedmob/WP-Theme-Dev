@@ -17,3 +17,4 @@ wp-content/plugins/hello.php
 /wp-content/themes/gulp-dev/node_modules
 
 .vs/
+.vscode/
