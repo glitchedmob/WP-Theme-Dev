@@ -44,7 +44,7 @@ function dev_theme_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'dev-theme' ),
+		'primary' => esc_html__( 'Header', 'dev-theme' ),
 	) );
 
 	/*
@@ -64,6 +64,13 @@ function dev_theme_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+    // Add theme support for Custom Logo
+    add_theme_support ('custom-logo', array(
+        'width' => 90,
+        'height' => 90,
+        'flex-width' => true,
+    ) );
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
@@ -91,7 +98,7 @@ function dev_theme_fonts_url() {
 	if ( 'off' !== $pt_serif) {
 		$font_families[] = 'PT Serif:400,400i,700,700i';
  	}
- 
+
 	if ( in_array( 'on', array($source_sans_pro, $pt_serif) ) ) {
 
 		$query_args = array(
@@ -122,7 +129,7 @@ function dev_theme_resource_hints( $urls, $relation_type ) {
 		);
 	}
 
-	return $urls; 
+	return $urls;
 }
 add_filter( 'wp_resource_hints', 'dev_theme_resource_hints', 10, 2 );
 
@@ -161,11 +168,16 @@ add_action( 'widgets_init', 'dev_theme_widgets_init' );
  */
 function dev_theme_scripts() {
 	// Enqueue Google Fonts: Source Sans Pro and PT Serif
-	wp_enqueue_style('dev-themes-fonts', dev_theme_fonts_url());
+	wp_enqueue_style('dev-themes-fonts', dev_theme_fonts_url() );
 
 	wp_enqueue_style( 'dev-theme-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'dev-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'dev-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
+
+    wp_localize_script( 'dev-theme-navigation', 'dev_themeScreenReaderText', array(
+        'expand' => __( 'Expand child menu', 'dev-theme' ),
+        'collapse' => __( 'Collapse child menu', 'dev-theme' )
+    ) );
 
 	wp_enqueue_script( 'dev-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
