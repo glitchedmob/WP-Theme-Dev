@@ -14450,6 +14450,7 @@
     <Folder Include="wp-content\themes\dev-theme\sass\modules" />
     <Folder Include="wp-content\themes\dev-theme\sass\navigation" />
     <Folder Include="wp-content\themes\dev-theme\sass\site\header" />
+    <Folder Include="wp-content\themes\dev-theme\sass\site\footer\" />
     <Folder Include="wp-content\themes\dev-theme\sass\site\primary" />
     <Folder Include="wp-content\themes\dev-theme\sass\site\secondary" />
     <Folder Include="wp-content\themes\dev-theme\sass\site" />
@@ -16296,6 +16297,9 @@
     <Folder Include="wp-includes" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="wp-content\themes\dev-theme\js\functions.js" />
+    <Content Include="wp-content\themes\dev-theme\sass\media\_images.scss" />
+    <Content Include="wp-content\themes\dev-theme\sass\site\footer\_footer.scss" />
     <Content Include="wp-content\themes\dev-theme\sass\site\header\_header-menu.scss" />
   </ItemGroup>
 </Project>

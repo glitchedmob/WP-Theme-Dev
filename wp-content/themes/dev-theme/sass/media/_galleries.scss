@@ -1,5 +1,5 @@
 .gallery {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.5em 0;
 }
 
 .gallery-item {
@@ -7,6 +7,32 @@
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
+    padding: 1em;
+
+    img {
+        display: block;
+    }
+
+    a {
+        display: inline-block;
+        border-bottom: none;
+
+        &:hover,
+        &:focus {
+            border-bottom:none;
+            box-shadow: none;
+
+            img {
+                border-color: $color__interactive;
+            }
+        }
+
+        img {
+            padding: 0.5em;
+            margin: 0 auto;
+            border: 1px solid #FFF;
+        }
+    }
 
 	.gallery-columns-2 & {
 		max-width: 50%;
