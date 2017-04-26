@@ -24,6 +24,12 @@ function dev_theme_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
+    if ( is_active_sidebar( 'sidebar-1' ) ) {
+        $classes[] = 'has-sidebar';
+    } else {
+        $clases[] = 'no-sidebar';
+    }
+
 	return $classes;
 }
 add_filter( 'body_class', 'dev_theme_body_classes' );

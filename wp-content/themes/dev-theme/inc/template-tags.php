@@ -125,3 +125,18 @@ function dev_theme_category_transient_flusher() {
 }
 add_action( 'edit_category', 'dev_theme_category_transient_flusher' );
 add_action( 'save_post',     'dev_theme_category_transient_flusher' );
+
+/*
+ * Add custom titles to navigation on a single post
+ * */
+
+function dev_theme_post_navigation() {
+    the_post_navigation( array(
+        'next_text' => '<span class="meta-nav" aria-hidden="true">' . __('Next ', 'dev-theme') . '</span>' .
+            '<span class="screen-reader-text">' . __('Next post:', 'dev-theme') . '</span>' .
+            '<span class="post-title">%title</span>',
+        'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __('Previous ', 'dev-theme') . '</span>' .
+            '<span class="screen-reader-text">' . __('Previous post:', 'dev-theme') . '</span>' .
+            '<span class="post-title">%title</span>',
+    ) );
+}
