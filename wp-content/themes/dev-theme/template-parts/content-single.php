@@ -32,9 +32,9 @@
         <?php
         if ( !is_active_sidebar( 'sidebar-1' ) ) : ?>
         <div class="post-content__wrap">
-        <div class="entry-meta">
-            <?php dev_theme_posted_on(); ?>
-        </div><!-- .entry-meta -->
+            <div class="entry-meta">
+                <?php dev_theme_posted_on(); ?>
+            </div><!-- .entry-meta -->
         <div class="post-content__body">
         <?php
 		endif; ?>
