@@ -724,6 +724,7 @@
     <Compile Include="wp-content\themes\dev-theme\template-parts\content-none.php" />
     <Compile Include="wp-content\themes\dev-theme\template-parts\content-page.php" />
     <Compile Include="wp-content\themes\dev-theme\template-parts\content-search.php" />
+    <Compile Include="wp-content\themes\dev-theme\template-parts\content-single.php" />
     <Compile Include="wp-content\themes\dev-theme\template-parts\content.php" />
     <Compile Include="wp-content\themes\dev-theme\.jscsrc" />
     <Compile Include="wp-content\themes\dev-theme\.jshintignore" />
@@ -14392,6 +14393,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".vscode" />
+    <Folder Include="db-export\" />
     <Folder Include="wp-admin\css\colors\blue" />
     <Folder Include="wp-admin\css\colors\coffee" />
     <Folder Include="wp-admin\css\colors\ectoplasm" />
@@ -16297,8 +16299,10 @@
     <Folder Include="wp-includes" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="db-export\wp-dev-theme.sql" />
     <Content Include="wp-content\themes\dev-theme\js\functions.js" />
     <Content Include="wp-content\themes\dev-theme\sass\media\_images.scss" />
+    <Content Include="wp-content\themes\dev-theme\sass\navigation\_content-navigation.scss" />
     <Content Include="wp-content\themes\dev-theme\sass\site\footer\_footer.scss" />
     <Content Include="wp-content\themes\dev-theme\sass\site\header\_header-menu.scss" />
   </ItemGroup>

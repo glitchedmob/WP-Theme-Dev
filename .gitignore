@@ -17,4 +17,8 @@ wp-content/plugins/hello.php
 /wp-content/themes/gulp-dev/node_modules
 
 .vs/
+.vs/config/
+.vs/wp-dev-theme/
+.vs/wp-dev-theme/v15/
+.vs/wp-dev-theme/v15/.suo
 .vscode/
