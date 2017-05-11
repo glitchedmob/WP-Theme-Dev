@@ -22,6 +22,7 @@ function dev_theme_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
+		$classes[] = 'archive-view';
 	}
 
     if ( is_active_sidebar( 'sidebar-1' ) ) {

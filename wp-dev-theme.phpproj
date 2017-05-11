@@ -721,6 +721,7 @@
     <Compile Include="wp-content\themes\dev-theme\sass\variables-site\_variables-site.scss" />
     <Compile Include="wp-content\themes\dev-theme\sass\style.scss" />
     <Compile Include="wp-content\themes\dev-theme\sass\_normalize.scss" />
+    <Compile Include="wp-content\themes\dev-theme\sidebar-footer.php" />
     <Compile Include="wp-content\themes\dev-theme\template-parts\content-none.php" />
     <Compile Include="wp-content\themes\dev-theme\template-parts\content-page.php" />
     <Compile Include="wp-content\themes\dev-theme\template-parts\content-search.php" />
@@ -14453,6 +14454,7 @@
     <Folder Include="wp-content\themes\dev-theme\sass\navigation" />
     <Folder Include="wp-content\themes\dev-theme\sass\site\header" />
     <Folder Include="wp-content\themes\dev-theme\sass\site\footer\" />
+    <Folder Include="wp-content\themes\dev-theme\sass\site\archive\" />
     <Folder Include="wp-content\themes\dev-theme\sass\site\primary" />
     <Folder Include="wp-content\themes\dev-theme\sass\site\secondary" />
     <Folder Include="wp-content\themes\dev-theme\sass\site" />
@@ -16303,6 +16305,7 @@
     <Content Include="wp-content\themes\dev-theme\js\functions.js" />
     <Content Include="wp-content\themes\dev-theme\sass\media\_images.scss" />
     <Content Include="wp-content\themes\dev-theme\sass\navigation\_content-navigation.scss" />
+    <Content Include="wp-content\themes\dev-theme\sass\site\archive\_archive.scss" />
     <Content Include="wp-content\themes\dev-theme\sass\site\footer\_footer.scss" />
     <Content Include="wp-content\themes\dev-theme\sass\site\header\_header-menu.scss" />
   </ItemGroup>

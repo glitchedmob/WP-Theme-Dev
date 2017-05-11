@@ -22,13 +22,14 @@ a {
 .entry-content,
 .entry-summary,
 .comment-content {
-    a {
-        text-decoration: none;
-        border-bottom: 3px solid $color__interactive;
-
-        &:hover,
-	    &:focus {
-            color: $color__interactive;
-        }
-    }
+	
+	a {
+		text-decoration: none;
+		border-bottom: 3px solid $color__interactive;
+		
+		&:focus,
+		&:hover {
+			color: $color__interactive;
+		}
+	}
 }

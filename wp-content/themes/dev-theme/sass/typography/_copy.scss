@@ -1,6 +1,6 @@
 p {
-    margin-top: 0.5em;
-	margin-bottom: 1.5em;
+	margin-top: .5em;
+	margin-bottom: 1em;
 }
 
 dfn, cite, em, i {
@@ -8,22 +8,22 @@ dfn, cite, em, i {
 }
 
 blockquote {
-    position: relative;
-    margin: 0 0 1em;
-    background: $color__background-pre;
-    padding: 1em 2em 0.5em 5em;
-    font-style: italic;
-
-    &:before {
-        position: absolute;
-        top: -0.2em;
-        left: -0.13em;
-        content: "\201C";
-        font-family: $font__sans;
-        font-size: 12em;
-        line-height: 100%;
-        color: white;
-    }
+	position: relative;
+	margin: 0 0 1em;
+	background: $color__background-pre;
+	padding: 1em 2em .5em 5em;
+	font-style: italic;
+	
+	&:before {
+		position: absolute;
+		top: -.2em;
+		left: -.13em;
+		content: "“";
+		font-family: $font__sans;
+		font-size: 12em;
+		line-height: 100%;
+		color: white;
+	}
 }
 
 address {

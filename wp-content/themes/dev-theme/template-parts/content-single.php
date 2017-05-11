@@ -81,5 +81,5 @@
         ?>
     </section>
 
-    <?php get_sidebar(); ?>
+    <?php get_sidebar( 'sidebar-1' ); ?>
 </article><!-- #post-## -->

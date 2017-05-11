@@ -12,9 +12,12 @@
 ?>
 
 	</div><!-- #content -->
-
+    <div>
+        <?php get_sidebar( 'footer' ); ?>
+    </div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
+       
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
